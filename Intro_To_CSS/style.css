@@ -1,6 +1,8 @@
+
 *{
+
     background-color: rgb(166, 255, 0);
- }
+}
 
 div{
     background-color: aqua;
@@ -17,8 +19,15 @@ div{
 
 h1{
     background-color: blue;
-  }
+}
 
 #head1{
     background-color: red;
+}
+#submitButton{
+    padding: 5px 15px;
+    border: 1px solid rgb(1,91,40);
+    border-radius: 7px;
+    background-color: #029852;
+    color: aliceblue;
 }
