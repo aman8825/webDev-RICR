@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("assets/ricrLogin background img..jpg");
+    background-size: cover;
+
+    background-position: center;
+}
+.container{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 10%;
+    
+}
+.logo{
+    display: grid;
+    justify-content: baseline;
+    justify-items: center;
+}
+form{
+    display: inline-block ;
+    justify-content: ;
+}
