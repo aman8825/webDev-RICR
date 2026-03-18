@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#leftContainer{
+    width: 20%;
+    height: 100vh;
+    background-color:#2B4C50;
+    display: grid;
+    justify-content: baseline;
+    align-items: center;
+}
+#rightContainer{
+    width: 50%;
+    height: 100vh;
+    background-color: #ECECEC;
+    
+}
+.rightElementLeft{
+    display: flex;
+}
