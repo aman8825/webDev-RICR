@@ -1,26 +1,152 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 #main{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100vh;
+}
+html, body{
+    height: 100%;
 }
 #leftContainer{
+    
     width: 20%;
-    height: 100vh;
-    background-color:#2B4C50;
-    display: grid;
-    justify-content: baseline;
-    align-items: center;
-}
-#rightContainer{
-    width: 50%;
-    height: 100vh;
-    background-color: #ECECEC;
+    height: 100%;
+    background-color:#314657;
+    /*display: grid;*/
+    
+    
+
     
 }
+
+/* RIGHT SIDE */
+#rightContainer{
+    width: 75%;
+    background-color: #dce4e4;
+    padding: 30px;
+}
+
 .rightElementLeft{
     display: flex;
+}
+#profil{
+   
+    display: grid;
+    justify-items: center;
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #252c32;
+    border-radius: 100%;
+    
+    
+}
+#name h3{
+    color: white;
+}
+
+#name h5{
+    color: rgb(194, 194, 108);
+}
+/* CONTACT */
+#contactinfo
+{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+.contactField{
+    
+
+    display: flex;
+    gap: 3px;
+}
+
+#contactinfo span{
+    color: royalblue;
+}
+
+#contactinfo p, 
+#contactinfo a{
+    color: grey;
+    font-size: 14px;
+}
+
+span{
+    color: royalblue;
+}
+/*skill*/
+#skill{
+margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+#leftContainer  h4{
+    color:aliceblue;
+}
+p{
+    color:gray;
+}
+h2{
+    color: #314657;
+    margin-bottom: 10px;
+}
+
+
+.rightElementLeft{
+    display: grid;
+    
+}
+/* EXPERIENCE / EDUCATION / AWARDS */
+#experiance,
+#Education,
+#awards{
+   /* display: inline;
+    margin-top: 10px;*/
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+   
+    
+}
+
+.company,
+.education,
+.award
+{
+   /* display: grid;
+    gap: 15px;
+    margin-left: 10px;*/
+    margin-top: 35px;
+    
+
+}
+
+/*
+#experiance {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#Education{
+    display: flex;
+    justify-content: space-between;
+}
+#awards{
+     display: flex;
+    justify-content: space-between;
+}*/
+
+h5{
+    color: royalblue;
+    margin-top: 35px;
 }
