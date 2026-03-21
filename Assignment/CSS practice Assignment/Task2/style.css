@@ -5,9 +5,11 @@
 }
 #main{
     display: flex;
+    justify-content: top;
     align-items: stretch;
     width: 100%;
     min-height: 100vh;
+    border-bottom: 2px solid black;
 }
 html, body{
     height: 100%;
