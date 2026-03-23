@@ -18,7 +18,16 @@
     justify-content: center;
     
 }
+.footer{
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 10;
+    margin-bottom: 10px;
 
+}
 .a{
     width: 200px;
     height: 200px;
@@ -34,7 +43,13 @@
  width: 100px;
  height: 50ox;
  border: 2px solid wheat;
+ background-color: gray;
  position: absolute;
 bottom: 0px;
 left: 100px;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
