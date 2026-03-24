@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#page{
+margin: 10px auto;
+width: 794px;
+height: 1123px;
+display: flex;
+}
+#sidebar{
+    width: 35%;
+    background-color: #34495E;
+    padding: 20px;
+}
+#maincontaint{
+    width: 65%;
+    background-color:#D6DBDF;
+    padding: 20px;
+}
+#image{
+    margin:10px auto;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 100%;
+    img{
+    width: inherit;
+    height: inherit;
+    }
+
+}
+#name{
+    margin-top: 10px;
+color: aliceblue;
+text-align: center;
+}
+#designation{
+    color: antiquewhite;
+    text-align: center;
+    font-variant:small-caps;
+}
+hr{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.sidebarHeading{
+    margin-top: 20px;
+    color: aliceblue;
+    
+
+}
+.GidebargrayText{
+    padding: 7px;
+
+    color: gray;
+
+}
+svg{
+    color: aqua;
+}
+.contactInfo{
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+}
