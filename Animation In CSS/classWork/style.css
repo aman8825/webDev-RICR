@@ -1,0 +1,38 @@
+#div1{
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+    
+#div1:hover{
+    width: 200px;
+    /*transition: width 3s ease-out;
+    transition: width 3s ease-in;
+    transition: width 3s ease-in-out;
+    transition: width 3s linear;*/
+    transition: width 3s linear 2s ;
+}
+#div2{
+    border: 1px solid black;
+    width: 0px;
+    height: 20px;
+    overflow: hidden;
+    text-wrap: nowrap;
+    transition: width 3s;
+}
+#card
+{
+    margin: 50%;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+     /*transform: rotatez(0deg);*/
+     transform: rotate(0deg,odeg);
+    transition: transform 3s linear;
+}
+#card:hover{
+    transform: rotate(30deg,30deg);
+    transition: transform 3s linear;
+}
