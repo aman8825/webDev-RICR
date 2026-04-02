@@ -1,19 +1,41 @@
+:root{
+    --primery-color:rgb(218, 123, 218);
+    --secondary-color:aqua;
+    --text-color:green;
+    --button-border:2px solid rgb(191, 159, 159);
+}
+
 h1{
-    color: darkorange;
+    color: var(--primery-color);
+    
 }
 h3{
-    color: aqua;
+    color: var(--secondary-color);
 }
 p{
-    color: green;
+    color: var(--text-color);
 }
 th{
-     color: darkorange;
+    color: var(--primery-color);
 }
 td{
 
-     color: green;
+    color: var(--text-color);
 }
-button{
-    border: ;
+#login{
+    background-color: var(--primery-color);
+    color: var(--secondary-color);
+    border: var(--button-border);
+}
+#Reegister{
+    background-color: var(--secondary-color);
+    color: var(--primery-color);
+    border: var(--button-border);
+}
+table{
+border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+    
 }
