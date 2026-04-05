@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-@keyframes nayan {
+@keyframes aman {
     0%{
         top:0;
         left:0;
@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    animation: nayan 8s infinite linear;
+    animation: aman 8s infinite linear;
 
 }
 
