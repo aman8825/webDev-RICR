@@ -9,11 +9,17 @@ h1{
     color: var(--primery-color);
     
 }
+h1::before{
+    content: " ✨";
+    margin-right: 10px;
+}
 h3{
     color: var(--secondary-color);
 }
 p{
     color: var(--text-color);
+}p::first-letter{
+    color: red;
 }
 th{
     color: var(--primery-color);
