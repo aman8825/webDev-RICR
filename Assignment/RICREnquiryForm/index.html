@@ -1,146 +1,276 @@
-<!doctype html>
+
+<!DOCTYPE html>
+3
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RICR Enquiry Form</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RICR Enquiry Form</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<link rel="stylesheet" href="style.css">
 
-  <body>
-    <div id="header">
-      <div class="headerItems">.About</div>
-      <div id="logo">
-        <img src="ricrLogo.png" alt="img">
-      </div>
-     
-      <div class="headerItems">Home</div>
-      <div class="headerItems">About</div>
-      <div class="headerItems">Course</div>
-      <div class="headerItems">IDE</div>
-      <div class="headerItems">Contact Us</div>
-      <div id="button">
-        <div class="headerItems">
-          <a href="tel:+918889991736">
-            <!-- <span
-              ><svg
-                class="svg-inline--fa fa-phone phone_icon"
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="phone"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                data-fa-i2svg=""
-              >
-                <path
-                  fill="currentColor"
-                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-                ></path></svg
-              > <i class="fa-solid fa-phone phone_icon"></i> Font Awesome fontawesome.com 
-            </span>-->
-            +91 8889991736
-          </a>
-        </div>
-        <div class="headerItems">
-            <button>Student Login</button>
-        </div>
-      </div>
-    </div>
+</head>
 
-    <div class="container">
-      <h2 class="title">RICR Enquiry Form</h2>
+<body>
 
-      <form class="enquiry-form">
-        <div class="form-grid">
-          <!-- Name -->
-          <div class="form-group">
-            <label>Candidate Name *</label>
-            <input type="text" placeholder="Enter your name" />
-          </div>
+<!--  HEADER  -->
 
-          <!-- Father Name -->
-          <div class="form-group">
-            <label>Father Name *</label>
-            <input type="text" placeholder="Enter father name" />
-          </div>
+<header id="header">
 
-          <!-- Gender -->
-          <div class="form-group">
-            <label>Gender *</label>
-            <select>
-              <option>Select Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
-            </select>
-          </div>
+<div id="logo">
+<img src="ricrLogo.png" alt="logo">
+</div>
 
-          <!-- DOB -->
-          <div class="form-group">
-            <label>Date of Birth *</label>
-            <input type="date" />
-          </div>
 
-          <!-- Qualification -->
-          <div class="form-group">
-            <label>Qualification *</label>
-            <input type="text" />
-          </div>
 
-          <!-- Mobile -->
-          <div class="form-group">
-            <label>Mobile Number *</label>
-            <input type="tel" />
-          </div>
+<nav class="nav-links" id="navLinks">
 
-          <!-- Email -->
-          <div class="form-group">
-            <label>Email *</label>
-            <input type="email" />
-          </div>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Courses</a>
+<a href="#">IDE</a>
+<a href="#">Contact</a>
 
-          <!-- District -->
-          <div class="form-group">
-            <label>District *</label>
-            <input type="text" />
-          </div>
+<button class="login-btn">
+Student Login
+</button>
 
-          <!-- State -->
-          <div class="form-group">
-            <label>State *</label>
-            <input type="text" />
-          </div>
+</nav>
 
-          <!-- Course -->
-          <div class="form-group">
-            <label>Course Interested *</label>
-            <select>
-              <option>Select Course</option>
-              <option>Computer Course</option>
-              <option>Skill Development</option>
-              <option>Other</option>
-            </select>
-          </div>
+</header>
 
-          <!-- Address -->
-          <div class="form-group full-width">
-            <label>Address *</label>
-            <textarea rows="3"></textarea>
-          </div>
 
-          <!-- Message -->
-          <div class="form-group full-width">
-            <label>Message</label>
-            <textarea rows="3"></textarea>
-          </div>
-        </div>
 
-        <button type="submit" class="submit-btn">Submit</button>
-      </form>
-    </div>
-  </body>
+<!-- FORM  -->
+
+<div class="container">
+
+<h2 class="title">Enquiry Form</h2>
+
+<p class="subtitle">
+Have questions or need assistance? Fill out the form below to connect with our team and explore your opportunities.
+</p>
+
+<form>
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Person Name*</label>
+<input type="text" placeholder="Person Name">
+</div>
+
+<div class="form-group">
+<label>Contact Number*</label>
+<input type="text" placeholder="Contact Number">
+</div>
+
+<div class="form-group">
+<label>Email*</label>
+<input type="email" placeholder="Email">
+</div>
+
+<div class="form-group">
+<label>Qualification*</label>
+
+<select>
+<option>Select Qualification</option>
+<option>10th Pass</option>
+<option>12th Pass</option>
+<option>College</option>
+<option>Other</option>
+</select>
+
+</div>
+
+<div class="form-group full-width">
+<label>College/School Name*</label>
+<input type="text" placeholder="College/School Name">
+</div>
+
+<div class="form-group">
+<label>Year*</label>
+
+<select>
+<option>Year</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Branch*</label>
+
+<select>
+<option>Select Branch</option>
+<option>CSE</option>
+<option>AIML</option>
+<option>EC</option>
+<option>Mechanical</option>
+</select>
+
+</div>
+
+
+
+<!-- Checkbox -->
+
+<div class="form-group full-width checkbox-group">
+
+<label class="section-title">
+Interested in Which Course*
+</label>
+
+<label><input type="checkbox"> Full Stack Web Development</label>
+
+<label><input type="checkbox"> Data Science with Python</label>
+
+<label><input type="checkbox"> Data Analytics with Python</label>
+
+<label><input type="checkbox"> Business Analyst</label>
+
+<label><input type="checkbox"> Java Programming</label>
+
+<label><input type="checkbox"> Python Programming</label>
+
+<label><input type="checkbox"> C/C++ Programming</label>
+
+<label><input type="checkbox"> Other</label>
+
+</div>
+
+
+
+<div class="form-group full-width">
+
+<label>
+Source of Information
+</label>
+
+<select>
+
+<option>Select Source</option>
+<option>Google</option>
+<option>Friend</option>
+<option>Instagram</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+
+<div class="form-group full-width">
+
+<label>
+Name of Executive*
+</label>
+
+<select>
+
+<option>Select Executive</option>
+<option>Executive 1</option>
+<option>Executive 2</option>
+
+</select>
+
+</div>
+
+</div>
+
+<button class="submit-btn">
+Submit
+</button>
+
+</form>
+
+</div>
+
+
+
+<!-- FOOTER  -->
+
+<footer>
+
+<div class="footer-top">
+
+<img src="ricrLogo.png" class="footer-logo">
+
+<p>
+RICR is a subsidiary of Raj Digital Private Limited. It is a premier coding and robotics institute empowering students with cutting-edge education and real-world skills.
+</p>
+
+</div>
+
+
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Quick Links</h3>
+
+<p>Courses</p>
+<p>Host a Workshop</p>
+<p>Community Ambassador</p>
+<p>Work With Us</p>
+<p>Contact Us</p>
+
+</div>
+
+
+
+<div>
+
+<h3>Other Links</h3>
+
+<p>Edunest Facility</p>
+
+<h3 class="policy">
+Policies
+</h3>
+
+<p>Terms of Service</p>
+<p>Privacy Policy</p>
+
+</div>
+
+
+
+<div>
+
+<h3>Information</h3>
+
+<p>📍 Minal Mall, Bhopal</p>
+
+<p>✉ contact@ricr.in</p>
+
+<p>📞 +91 8889991736</p>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>
+© 2024 - Raj Digital Private Limited | All Rights Reserved
+</p>
+
+</div>
+
+</footer>
+
+
+
+
+
+</body>
 </html>
-l̥ō
