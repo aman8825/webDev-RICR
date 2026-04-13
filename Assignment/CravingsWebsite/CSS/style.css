@@ -1,0 +1,227 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-primary:          #c2410c;  /* Brand orange-red */
+  --color-primary-content:  #ffffff;  /* Text on primary background */
+  --color-secondary:        #6b7280;  /* Muted gray text */
+  --color-neutral:          #3f3f46;  /* Dark sections (footer, bars) */
+  --color-neutral-content:  #f4f4f5;  /* Text on dark backgrounds */
+  --color-base-100:         #fff8f1;  /* Warm white page background */
+  --color-base-200:         #f5ede5;  /* Slightly darker warm white */
+  --color-base-300:         #e7d9c9;  /* Borders and dividers */
+  --color-base-content:     #2d1b10;  /* Default dark text */
+  --color-error:            #ef4444;  /* Red for error states */
+  --color-success:          #22c55e;  /* Green for success states */
+}
+/* body{
+  width: 100%;
+  height: 100vh;
+} */
+/* ----------header---------- */
+#header{
+    background-color: var(--color-primary);
+    height: 64px;
+    width: 100%;
+    position:fixed;
+    z-index: 99;
+}
+#logo{
+width: 87.45px;
+height: 56px;
+overflow: hidden;
+img{
+  width: inherit;
+  width: inherit;
+}
+
+}
+#mainDiv{
+  width: 100%;
+  height: 85vh;
+  background-image: url(../images/.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+#restaurants{
+  min-height: 90vh;
+
+    
+    background: linear-gradient(
+        to bottom,
+        #c2410c 0%,     /* strong orange top */
+        #e07a52 20%,    /* medium orange */
+        #f3c9b6 40%,    /* light peach */
+        #f9efe9 60%,    /* very light */
+        #ffffff 85%     /* white bottom */
+    );
+}
+.restaurants{
+
+  width: 350px;
+  height: 430px;
+  background-color: var(--color-primary-content);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); 
+  border-radius: 14px;
+  overflow: hidden;
+img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+}
+#restaurantsItems{
+  padding:20px 180px;
+}
+ .food{
+  background-color: var(--color-base-300);
+  text-align: center;
+ }
+ .menuButton {
+  width: 300px;
+  height: 40px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  border-radius: 10px;
+
+  background-color: var(--color-primary);
+  
+ }
+ .n1,
+ .n2{
+ width: 200px;
+ height: 200px;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+
+ }
+ /*------------ Feedback------------ */
+ .feedback{
+   width: 250px;
+ height: auto;
+ padding: 0px 5px ;
+ margin-top: 10px;
+ margin-bottom: 50px;}
+
+  
+ 
+ .feedbackHeading{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ }
+ .star{
+  color: gold;
+   font-size: 30px;
+ }
+ .profile1,
+ .profile2
+ {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-base-100);
+  border-radius: 50%;
+ }
+ .profile2{
+   background-color: rgb(199, 49, 167);
+ }
+ /* Become a Restaurant Partner */
+ #partner{
+width: 100%;
+height: 40vh;
+display: grid;
+justify-content: center;
+align-items: center;
+background-color: var(--color-primary);
+color: var(--color-base-200);
+ }
+/* ----------Footer---------- */
+#Footer{
+background-color: var(--color-neutral);
+}
+#Footerlogo{
+  width: 128px;
+  height: 128px;
+  border: 2px solid blue;
+  overflow: hidden;
+  background-color: #6d6b6b;
+  img{
+    width: inherit;
+    height: inherit;
+  }
+}
+a{
+  text-decoration: none;
+color: var(--color-neutral-content);
+
+}
+a:hover{
+  color: var(--color-primary);
+}
+
+/*---------------- Login Page --------------*/
+#loginForm{
+ width: 100%;
+ height: 90vh;
+  padding-top: 120px;
+ background-image:url(../images/foodTable.webp) ;
+ 
+}
+#form{
+  width: 30%;
+ 
+  margin-left: 150px;
+  margin-bottom: 150px;
+  
+  h1{
+    color: var(--color-primary);
+  }
+  a{
+    margin-left: 55px;
+    color: var(--color-primary);
+  }
+  #button,
+  button
+  {
+    
+border: none ;
+
+    background-color: var(--color-primary);
+  }
+  .input{
+      height: 36px;
+      direction: none;
+      border: none;
+      padding: 8px;
+      border: 1px solid var(--color-base-300);
+      
+    }
+    .input:hover{
+        border: 1.5px solid var(--color-primary);
+      }
+}
+ #button{
+width: 90%;
+    height: 5vh;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center  ;
+    border-radius: 10px;
+  
+    
+
+ }
