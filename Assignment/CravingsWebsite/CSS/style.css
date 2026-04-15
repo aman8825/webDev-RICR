@@ -173,18 +173,21 @@ a:hover{
 }
 
 /*---------------- Login Page --------------*/
-#loginForm{
+#loginForm,
+#registerForm
+{ 
  width: 100%;
- height: 90vh;
+ height:100vh;
   padding-top: 120px;
  background-image:url(../images/foodTable.webp) ;
+ 
  
 }
 #form{
   width: 30%;
  
   margin-left: 150px;
-  margin-bottom: 150px;
+ 
   
   h1{
     color: var(--color-primary);
@@ -225,3 +228,90 @@ width: 90%;
     
 
  }
+ 
+/*---------------- Register Page --------------*/
+
+#registerForm
+{
+  #form{
+    margin-left: 60%;
+   margin-bottom: 20px;
+  
+}
+}
+/*---------------- About Page --------------*/
+#backgroundImg{
+  width: 100%;
+  height: 80vh;
+  background-image:url(../images/aboutPage.png) ;
+  
+  }
+#AboutLogo{
+  width: 128px;
+  height: 128px;
+  padding: 20%;
+  margin-bottom: 30px;
+   
+   img{
+    width: inherit;
+    height: inherit;
+   }
+  
+}
+#heading{
+  h1{
+    font-weight: 700;
+  }
+  strong{
+color: var(--color-primary);
+  }
+}
+#numberContainer{
+  background-color: var(--color-neutral);
+  h4{
+    color: var(--color-primary);
+    margin-left: 12px;
+    font-weight: 800;
+  }
+}
+#story{
+  h4{
+    color: var(--color-primary);
+  }
+  .leftCont
+  {
+  width: 300px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+     /* box-shadow: 10px 4px 15px rgba(0, 0,0,0.2);
+     border-radius: 15px; */
+     border: 1px solid #e4cfb8;
+     border-radius: 20PX;
+     h1{
+      color: var(--color-primary);
+     }
+  }
+}
+#coreValue{
+  .value{
+    width: 300px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+     /* box-shadow: 10px 4px 15px rgba(0, 0,0,0.2);
+     border-radius: 15px; */
+     border: 1px solid #e4cfb8;
+     border-radius: 20PX;
+     h1{
+      color: var(--color-primary);
+     }
+  }
+  .head{
+    color: var(--color-primary);
+  }
+  }
+
+
