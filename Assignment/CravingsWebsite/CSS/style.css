@@ -44,6 +44,12 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+#mainCont{
+  padding : 100px;
+  margin-left: 30%;
+}
+ 
   
 }
 #restaurants{
