@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>My Portfolio</title>
+
+<!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="mainCont">
-        
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="container text-center mt-5">
+  <h1>Hello, I'm Aman</h1>
+  <p>Web Developer</p>
+</section>
+
+<!-- About Section -->
+<section class="container mt-5">
+  <h2>About Me</h2>
+  <p>I am a student learning HTML, CSS and Bootstrap.</p>
+</section>
+
+<!-- Projects Section -->
+<section class="container mt-5">
+  <h2>Projects</h2>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5>Project 1</h5>
+          <p>My first project</p>
+        </div>
+      </div>
     </div>
+
+  </div>
+
+</section>
+
+<!-- Contact -->
+<section class="container mt-5">
+  <h2>Contact</h2>
+
+  <form>
+    <input class="form-control mb-2" placeholder="Name">
+    <input class="form-control mb-2" placeholder="Email">
+    <textarea class="form-control mb-2"></textarea>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  © 2026 My Portfolio
+</footer>
+
 </body>
 </html>
