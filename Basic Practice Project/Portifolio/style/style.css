@@ -1,0 +1,94 @@
+
+body{
+    background-color: #081b29;
+color: #ededed;
+font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+}
+#header{
+    font-size: 19px;
+    
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    a{
+        color: #ededed;
+    }
+}
+#rightCont{
+    margin-top: 30px;
+    
+    h1{
+        font-family: 'Poppins';
+        font-size:56px;
+        font-weight: 700;
+        
+    }
+    h3
+    {
+         font-family: 'Poppins';
+        font-size:32px; 
+        font-weight: 700;
+    color: #00abf0; 
+    }
+    p{
+        font-size: 20px;
+    margin: 20px 0 40px;
+    }
+}
+#nameBorder
+{
+    text-decoration: underline;
+    text-decoration-color:#00abf0;
+}
+#image{
+    width: 350px;
+    height: 450px;
+    margin-left: 50%;
+    margin-top: 30px;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px #00abf0;
+    overflow: hidden;
+
+    img{
+        width: inherit;
+        height: inherit;
+    }
+}
+.button
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    margin-top: 40px;
+    padding: auto;
+    border: 2px solid #0f87c2;
+    letter-spacing: 1;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: 600;
+
+
+}
+#hireme{
+background: #00abf0;
+    
+    a{
+color: #081b29;
+}
+    
+}
+#contact{
+     box-shadow: 0 4px 8px #00abf0;
+  a{
+color: #00abf0;
+}
+}
