@@ -7,6 +7,25 @@ font-family: 'Poppins';
 a{
     text-decoration: none;
 }
+@media screen and (max-width: 750px) {
+body{
+    background-color: aqua;
+    .head{
+        display: none;
+    }
+}
+}
+@media screen and (min-width: 750px) {
+    #dropdownMen
+    {
+ display: none;
+    }
+    #dropdownMen:hover .head
+    {
+ display: block;
+    }
+    
+}
 #header{
     font-size: 19px;
     
@@ -21,6 +40,7 @@ a{
         color: #ededed;
     }
 }
+
 #rightCont{
     margin-top: 30px;
     
@@ -50,7 +70,7 @@ a{
 #image{
     width: 350px;
     height: 450px;
-    margin-left: 50%;
+    margin-left: %;
     margin-top: 30px;
     border-radius: 20%;
     box-shadow: 0 4px 8px #00abf0;
