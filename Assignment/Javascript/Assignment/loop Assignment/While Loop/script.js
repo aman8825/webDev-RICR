@@ -75,7 +75,7 @@ while(d<=5)
 {
     console.log(d);
     // d++ missing → infinite loop
-
+}
 
 // Question9
 let e=1;
