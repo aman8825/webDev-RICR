@@ -10,8 +10,10 @@ function Submit() {
   document.getElementById("myData2").innerText = City;
   document.getElementById("myData3").innerText = Email;
   document.getElementById("myData4").innerText = Passward;
+ 
   document.getElementById("myData").value = " ";
-
+ 
   document.getElementById("dataCard").classList.add("divShow");
    document.getElementById("dataCard").classList.remove("divHide");
 }
+
