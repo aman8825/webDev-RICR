@@ -1,0 +1,17 @@
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(arr.indexOf(6));
+console.log(arr.includes(9));
+console.log(arr.indexOf(16));
+console.log(arr.indexOf(4,10));
+let num=[7,49,24,25,35,2,0,5];
+//num.sort();
+num.sort((a,b) => a - b);
+console.log(num);
+num.sort((a,b) =>  b-a);
+console.log(num);
+console.log(num.includes(2));
+console.log(num);
+console.log(arr.indexOf(24));
+console.log(num);
+num.sort();
+console.log(num);
