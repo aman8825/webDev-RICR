@@ -1,0 +1,16 @@
+#container{
+    display: flex;
+    border: 2px solid black;
+    
+}
+#rightContainer{
+    display: grid;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+#leftContainer{
+    width: 70%;
+    padding: 10px;
+    border-right:2px solid black ;
+}

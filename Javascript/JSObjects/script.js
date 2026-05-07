@@ -70,10 +70,27 @@
 
 // console.log(ar2.filter((val)=>val>20));//Multi Search
 // console.log(ar2.slice(0,7));
-
+// <---------String---------->
 let ab="This is Web-Development Class"
 {
     console.log(ab);
     console.log(ab.split(" "));
     console.log(ab.split("-"));
 }
+
+let str="this is string";
+console.log(str.charAt(5));
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+let a=3.14;
+console.log(a);
+console.log(typeof a);
+let b=a.toString();
+console.log(b);
+
+
+let c=3.24765543322345;
+//console.log(c);
+console.log(c.toFixed(3));
+let fullName="Aman Kumar";
+//  console.log('My name is ${fullName}');
