@@ -28,3 +28,4 @@ function ChangeBulbColor(){
 function reset(){
     window.location.reload();
 }
+
