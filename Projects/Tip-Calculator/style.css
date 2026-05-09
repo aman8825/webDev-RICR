@@ -1,0 +1,12 @@
+#container{
+    width: 500px;
+    height: 550px;
+    background-color: navy;
+
+}
+#head{
+    background-color: orange;
+}
+.InputBox{
+    border-bottom: 2px solid skyblue;
+}
