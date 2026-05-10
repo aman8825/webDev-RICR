@@ -1,7 +1,7 @@
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const randomNumber = Math.floor(Math.random() * 10) ;
+  const randomNumber = (Math.random() * 10) ;
 
   const number = Number(document.getElementById("input").value);
 

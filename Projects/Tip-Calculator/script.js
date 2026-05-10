@@ -6,7 +6,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
   console.log(service);
   const tip = (bill * service/100)/person;
   document.getElementById("billAmount").value="";
-  Number(document.getElementById("Service").value)="";
-   Number(document.getElementById("PersonNumber").value)="";
+  document.getElementById("Service").value="";
+   document.getElementById("PersonNumber").value="";
   document.getElementById("Tip").innerText=tip +"₹";
 });
