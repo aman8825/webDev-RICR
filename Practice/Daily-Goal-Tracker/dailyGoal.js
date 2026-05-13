@@ -17,6 +17,8 @@ function addGoal() {
   "justify-content-center",
   "text-white",
   "rounded-2"
+  
+
 );
   BTN.onclick = () => LI.remove();
   const I = document.createElement("i");
