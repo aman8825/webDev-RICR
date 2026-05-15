@@ -240,7 +240,55 @@
               <span class="text-danger small" id="pinError"></span>
             </div>
           </section>
-
+ <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="gDfullName" class="form-label fw-bold"> Guardian’s Full Name:</label>
+              <input
+                type="text"
+                name="gDfullName"
+                id="gDfullName"
+                class="form-control"
+                placeholder="Rahul Kumar"
+              />
+              <span class="text-danger small" id="gDfullNameError"></span>
+            </div>
+            
+            <div class="p-2 mt-2">
+              <label for="gDphone" class="form-label fw-bold"
+                > Guardian’s Contact Number</label
+              >
+              <input
+                type="number"
+                name="gDphone"
+                id="gDphone"
+                class="form-control"
+                placeholder="9876543210"
+              />
+              <span class="text-danger small" id="gDphoneError"></span>
+            </div>
+           
+          </section>
+          <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="course" class="form-label fw-bold"
+                > How did you hear about us?</label
+              >
+              <select name="course" id="course" class="form-select">
+                <option value="">Select options</option>
+                <option value="Friends"> Friends</option>
+                <option value="OnlineAd">Online Ad</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Socialmedial">Social Media</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="text-danger small" id="courseError"></span>
+            </div>
+            <label for="course" class="form-label fw-bold"
+                > Special Requirements (optional)</label
+              >
+              <textarea name="SpecialRequirement" id="SR" class="form-control" placeholder="N/A"></textarea>
+          </section>
+          
           <div class="d-flex justify-content-evenly">
             <button type="reset" class="btn btn-danger">Clear</button>
             <button type="submit" class="btn btn-primary">Submit</button>

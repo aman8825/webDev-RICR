@@ -17,7 +17,8 @@ document
     const address = document.getElementById("address").value;
     const city = document.getElementById("city").value;
     const pin = document.getElementById("pin").value;
-
+const gDfullName = document.getElementById("gDfullName").value.trim();;
+const gDphone = document.getElementById("gDphone").value.trim();;
     const timings = [];
     document
       .querySelectorAll("input[name='timings']:checked")
@@ -25,11 +26,13 @@ document
         timings.push(item.value);
       });
 
+ const Age = new Date().getFullYear() - Number(dob.split("-")[0]);
+  console.log("AGE:-"+ Age);
     const registrationData = {
       FullName: fullName,
       Email: email,
       Phone: phone,
-      DateofBirth: dob,
+      Age: Age,
       Gender: gender,
       Qualification: qualification,
       Marks: marks,
@@ -38,16 +41,29 @@ document
       Address: address,
       City: city,
       PinCode: pin,
+      gDfullName:gDfullName,
+      gDphone:gDphone,
     };
+
+    document.getElementById("fullName").value="";
+    document.getElementById("email").value="";
+    document.getElementById("phone").value="";
+    document.getElementById("dob").value="";
+    document.getElementById("qualification").value="";
+    document.getElementById("marks").value="";
+    document.getElementById("course").value="";
+    document.getElementById("address").value="";
+   document.getElementById("city").value="";
+   document.getElementById("pin").value="";
+document.getElementById("gDfullName").value="";
+ document.getElementById("gDphone").value="";
 
     validateData(registrationData)
       ? (console.log("Registration Data:", registrationData),
         alert("Registration successful! Check console for details."))
       : alert("Registration unsuccessfull! Enter valid Data.");
   });
-let curDate=new Date().getFullYear();
-const Age = Number(curDate) - Number(dob.split("-")[0]);
-  console.log("AGE:-"+Age);
+ 
 // ResetButton
 document
   .getElementById("registrationFrom")
@@ -86,6 +102,39 @@ function validateData(data) {
       "Only Indian mobile numbers allowed";
     isValid = false;
   }
+  if (data.Age <= 15) {
+    document.getElementById("dobError").innerText =
+      "Your age is less than 15";
+
+    isValid = false;
+}
+if (!/^[1-9]\d{5}$/.test(data.PinCode)) {
+    document.getElementById("pinError").innerText =
+      "Invalid Pin Code!";
+    isValid = false;
+  }
+if (!/^[6-9]\d{9}$/.test(data.gDphone)) {
+    document.getElementById("gDphoneError").innerText =
+      "Only Indian mobile numbers allowed";
+    isValid = false;
+  }
+
+  if (!data.gDfullName) {
+    document.getElementById("gDfullNameError").innerText = "Full Name Required";
+    isValid = false;
+  } else if (!/^[A-Za-z\s]+$/.test(data.gDfullName)) {
+    document.getElementById("gDfullNameError").innerText =
+      "Only alphabets and spaces are allowed";
+    isValid = false;
+  }
 
   return isValid;
 }
+
+
+document
+  .getElementById("registrationFrom")
+  .addEventListener("reset", (event) => {
+    event.preventDefault();
+    window.location.reload();
+  });
