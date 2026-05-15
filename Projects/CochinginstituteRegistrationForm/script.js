@@ -132,9 +132,3 @@ if (!/^[6-9]\d{9}$/.test(data.gDphone)) {
 }
 
 
-document
-  .getElementById("registrationFrom")
-  .addEventListener("reset", (event) => {
-    event.preventDefault();
-    window.location.reload();
-  });
