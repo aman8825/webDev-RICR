@@ -11,4 +11,5 @@ document.querySelector("form").addEventListener("submit", (event) => {
   document.getElementById("DOB").value = "";
   document.getElementById("CurrentDate").value = "";
   document.getElementById("MyAge").innerText = Age;
+  
 });
