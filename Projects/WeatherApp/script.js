@@ -1,5 +1,5 @@
 
-const API_KEY="55c9babd42f78c77693e0738b79ce975";
+const API_KEY="Your_API_Key";
 
 
 async function getWeather() {
@@ -17,8 +17,14 @@ async function getWeather() {
   //console.log(data);
 
   const temperature = data.main.temp - 273.15;
+  const humidity = data.main.humidity ;
+  const Temp_min = data.main.temp_min ;
+  const Temp_max = data.main.temp_max;
 
   document.getElementById("Temperature").innerText = temperature.toFixed(2);
+  document.getElementById("Humidity").innerText = humidity.toFixed(2);
+  document.getElementById("Temp_min").innerText = Temp_min.toFixed(2);
+  document.getElementById("Temp_max").innerText = Temp_max.toFixed(2);
 }
 
 async function getGeoLocation(city) {
