@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="d-flex gap-5 text-light p-3 border border-1 shadow">
+        <span><i class="bi bi-currency-exchange"></i></span>
+        Currency Converter
+    </header>
+    <div class="text-light text-center mt-5 pt-5">
+        <h1 class="fw-bolder fs-1">Currency Converter </h1> 
+        <p class="text-light fs-5">Convert currencies instantly with real-time exchange rates</p>
+    </div>
+<div id="main" class="container  mt-5 shadow ">
+<div class="d-flex justify-content-center gap-4 mt-5">
+    <div class="cont d-flex justify-content-center align-items-center gap-2">
+        <span class="text-light flag"><img id="flagImg1" src="" width="100"></span>
+        <div>
+
+<select name="" id="UserCountry">
+     <option value="select">--Select--</option>
+    
+</select>
+        </div>
+        <div>
+<input type="number" id="amount">
+        </div>
+
+    </div>
+    <button class="swap-btn" onclick="convert()"><i class="bi bi-arrow-left-right"></i></button>
+    
+    <div class="cont d-flex justify-content-center align-items-center gap-2">
+        <span class="text-light flag" ><img id="flagImg2" src="" width="100"></span>
+        <div>
+ 
+<select name="" id="OutputCountry">
+    <option value="select">--Select--</option>
+    
+</select>
+        </div>
+       <div id="output" class="text-light"></div>
+
+    
+    
+</div>
+
+</div>
+<div class="text-light text-center mt-4 m-auto d-flex gap-5 p-2 justify-content-between"id="Display" >
+  <h5 id="display" class="ms-3"></h5>
+  <p id="time1">Last Updated:</p>
+  <p id="time2">Next Updated:</p>
+</div>
+</div>
+
+
+    <!-- BootStrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+   
+<script src="script.js"></script>
+  </body>
+</html>
