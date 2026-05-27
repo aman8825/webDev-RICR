@@ -1,4 +1,4 @@
-const API_KEY = "Your-API-Key";
+const API_KEY = "ecb40beae0c92ba3dc7d3b83";
 
 const userSelect = document.getElementById("UserCountry");
 const outputSelect = document.getElementById("OutputCountry");
@@ -36,16 +36,8 @@ async function convert() {
   const amount = document.getElementById("amount").value;
 
   const url = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${UserCountry}`;
-   const userSelectValue = document.getElementById("UserCountry").value;
- const flagCode1 = userSelectValue.slice(0, -1);
-
-  document.getElementById("flagImg1").src =
-  `https://flagsapi.com/${flagCode1}/shiny/64.png`;
- const outputSelectValue = document.getElementById("OutputCountry").value;
- const flagCode2 = outputSelectValue.slice(0, -1);
+   
  
-  document.getElementById("flagImg2").src =
-  `https://flagsapi.com/${flagCode2}/shiny/64.png`;
 
   const response = await fetch(url);
   const data = await response.json();
@@ -57,4 +49,20 @@ document.getElementById("display").innerText=1+ userSelectValue+ "="+rate+ outpu
   
   
 }
+ async function FetchFlg1()
+{
+  const userSelectValue = document.getElementById("UserCountry").value;
+ const flagCode1 = userSelectValue.slice(0, -1);
 
+  document.getElementById("flagImg1").src =
+  `https://flagsapi.com/${flagCode1}/shiny/64.png`;
+}
+
+async function FetchFlg2()
+{
+const outputSelectValue = document.getElementById("OutputCountry").value;
+ const flagCode2 = outputSelectValue.slice(0, -1);
+ 
+  document.getElementById("flagImg2").src =
+  `https://flagsapi.com/${flagCode2}/shiny/64.png`;
+}

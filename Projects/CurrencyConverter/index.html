@@ -25,11 +25,12 @@
     </div>
 <div id="main" class="container  mt-5 shadow ">
 <div class="d-flex justify-content-center gap-4 mt-5">
+  <label for="" class="text-light">From</label>
     <div class="cont d-flex justify-content-center align-items-center gap-2">
         <span class="text-light flag"><img id="flagImg1" src="" width="100"></span>
         <div>
 
-<select name="" id="UserCountry">
+<select name="" id="UserCountry" onchange="FetchFlg1()">
      <option value="select">--Select--</option>
     
 </select>
@@ -45,8 +46,8 @@
         <span class="text-light flag" ><img id="flagImg2" src="" width="100"></span>
         <div>
  
-<select name="" id="OutputCountry">
-    <option value="select">--Select--</option>
+<select name="" id="OutputCountry" onchange="FetchFlg2()">
+    <option value="select" >--Select--</option>
     
 </select>
         </div>
