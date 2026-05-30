@@ -1,4 +1,4 @@
-const API_KEY = "Your_KEY";
+const API_KEY = "ecb40beae0c92ba3dc7d3b83";
 
 const userSelect = document.getElementById("UserCountry");
 const outputSelect = document.getElementById("OutputCountry");
