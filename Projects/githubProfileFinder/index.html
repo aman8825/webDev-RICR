@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="p-3 bg-success fs-3 fw-bold"><i class="bi bi-github"></i>  Github Profile Finder</header>
+    <header class="p-3 bg-success fs-3 fw-bold d-flex"><i class="bi bi-github "></i>  Github Profile Finder
+    <div class="ms-auto" >
+      <button id="theme-btn" > <i class="bi bi-moon-stars-fill"></i></button>
+    </div>
+    </header>
     <div class="container mt-3">
 <div class="text-center">
     <h1>Github Profile Finder</h1>
@@ -23,16 +27,16 @@
 </div>
 <div class="input-group w-50 gap-4  m-auto mt-4">
 
-  <input id="input" type="text" class="form-control" placeholder=" 👤Enter GitHub username">
+  <input id="input" type="text" class="form-control " placeholder=" 👤Enter GitHub username">
    <button class="btn btn-success rounded-2" onclick="search()"><i class="bi bi-search"></i> Seearch</button>
 </div>
-<div class="main mt-5 w-50 m-auto card border  w border-black">
-<div class="d-flex gap-4 ">
-    <div id="profile" class="text-center m-3"><img src="" alt="userImg"></div>
+<div class="main mt-5 m-auto card border ">
+<div class="d-flex gap-3 ">
+    <div id="profile" class="text-center m-3"><img src="" alt="userImg" id="img"></div>
     <div id="userInfo" class="m-3 ">
-        <h5>userName</h5> 
-        <p>Name</p> 
-        <p>Bio</p> 
+        <h5 id="userName">userName</h5> 
+        <p id="name">Name</p> 
+        <p id="bio">Bio</p> 
         <div class="d-flex gap-5 mt-5">
             <p id="location">location</p>
             
@@ -41,7 +45,7 @@
         </div>
     </div>
 </div>
-<div id="GitHubLink" class="m-2 border border-1 border-success rounded-2 text-center " ><a href="" class="text-decoration-none text-success">View profile on Github <i class="bi bi-box-arrow-up-right"></i></a></div>
+<div id="GitHubLink" class="m-2 border border-1 border-success rounded-2 text-center " ><a href="" class="text-decoration-none text-success" id="link">View profile on Github <i class="bi bi-box-arrow-up-right"></i></a></div>
 </div>
 
 

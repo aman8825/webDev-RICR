@@ -1,22 +1,48 @@
-/* body{
-    background-color: black;
-    color: white;
-} */
-#profile{
-    width: 110px;
-    height: 110px;
-    border: 2px solid black;
-    border-radius: 50%;
-    overflow: hidden;
-    img{
-        width: inherit;
-        height: inherit;
-    }
+body {
+  background: #ffffff;
+  color: #111;
+  transition: 0.3s;
+}
+
+body.dark 
+{
+  background: #293348;
+  color: #ffffff;
+}
+input.dark{
+background: #9fa3aa;
+  color: #ffffff;
+  
+}
+.main.dark{
+background: #293348;
+  color: #ffffff;
+}
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+#profile {
+  width: 130px;
+  height: 130px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+#profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #GitHubLink{
     width: 200px;
 }
 .main{
+    width: 800px;
     background: #ffffff;
   border-radius: 18px;
   padding: 30px;
@@ -25,4 +51,12 @@
 }
 .main:hover{
 transform: scale(1.05);
+}
+#theme-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
 }
