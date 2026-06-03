@@ -1,11 +1,7 @@
-#abc{
-  background-color: aqua;
-}
-#header{
-  background-color: blue;
-  color: antiquewhite;
-}
 
-#footer{
-  background-color: brown;
+a{
+  text-decoration: none !important;
+}
+a:hover{
+  text-decoration: underline !important;
 }

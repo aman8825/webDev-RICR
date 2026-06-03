@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Product from "../pages/Product";
 
 function Header() {
   return (
@@ -7,10 +8,9 @@ function Header() {
         <div className="text-primary fs-4 fw-bold">My Company</div>
         <div className="d-flex gap-4">
         <Link to={"/"}>Home</Link>
-      {/* <span>Home</span>
-      <span>About</span>
-      <span>Products</span>
-      <span>ContactUs</span> */}
+        <Link to={"/about"}>About</Link>
+        <Link to={"/Product"}>Products</Link>
+        <Link to={"/contact-us"}>ContactUs</Link>
 
         </div>
         <div className="d-flex gap-4">
