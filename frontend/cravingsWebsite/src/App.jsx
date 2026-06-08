@@ -7,6 +7,7 @@ import Register from "./components/Register";
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <Navbar />
 
@@ -18,6 +19,9 @@ function App() {
 
       <Footer />
     </BrowserRouter>
+   
+    </>
+    
   );
 }
 

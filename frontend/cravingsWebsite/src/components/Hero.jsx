@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Hero() {
     return(
         <>
@@ -10,8 +11,10 @@ Delivered Fast</h1>
 </p>
             </div>
             <div className="mt-4 d-flex gap-3 justify-content-center">
-                <button className=" rounded-2 btn1">Sign Up</button>
-                <button className=" rounded-2 btn2  ">Login</button>
+                <Link to="/register"><button className=" rounded-2 btn1">Sign Up</button></Link>
+                <Link to="/login">  <button className=" rounded-2 btn2  ">Login</button>
+                </Link>
+              
             </div>
             <div className="d-flex align-content-center justify-content-center mt-4">
                 <input type="text" className="form-control bg-light  " placeholder="🔍Search resturents or dishes..."/>
