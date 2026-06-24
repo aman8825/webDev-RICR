@@ -23,9 +23,9 @@ res.json({message:"Welcome to my first backend Project"})
 
 })
 
-// app.post("/login",(req,res)=>{
-//     res.json({message:"Login Succesful"})
-// })
+app.post("/login",(req,res)=>{
+    res.json({message:"Login Succesful"})
+})
 
 // app.get("/logout",(req,res)=>{
 //     res.json({message:"Logout Succesful"})
