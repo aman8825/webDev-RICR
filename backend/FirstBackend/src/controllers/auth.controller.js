@@ -1,18 +1,25 @@
 import User from "../models/user.model.js";
 
-export const RegisterUser = async (req, res) => {
+export const RegisterUser = async (req, res,next) => {
   try {
     console.log(0);
     
     const { fullName, email, password, phone, gender, dob } = req.body;
     if (!fullName || !email || !password || !phone || !gender || !dob) {
-      res.status(400).json({ message: "All Feilds Required" });
-      return;
+         console.log(1);
+    //   res.status(400).json({ message: "All Feilds Required" });
+    const error=new Error("All fiels Required")
+    error.statusCode(400)
+      return next(error);
     }
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      res.status(409).json({ message: "Email Already Registered" });
-      return;
+
+    //   res.status(409).json({ message: "Email Already Registred" });
+    //   return;
+    const error=new Error("Email Already Registred")
+    error.statusCode(409)
+      return next(error);
     }
 
     //create profile of firt later

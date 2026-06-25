@@ -42,6 +42,14 @@ res.json({message:"Welcome to my first backend Project"})
 // app.post("/delete",(req,res)=>{
 //     res.json({message:"Delete Succesful"})
 // })
+
+//Default Error Handler
+app.use((err,req,res,next)=>{
+    const ErrMessage= err.message || "Internal Server Error";
+    const ErrStatusCode=error.StatusCode || 500;
+
+      res.status(ErrStatusCode).json({ message: ErrMessage});
+})
 //process ki help se Environment variables access kar sakte ho
 const port =process.env.PORT || 5000;
 //listen create connection with port
