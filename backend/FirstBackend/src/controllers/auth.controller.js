@@ -2,6 +2,8 @@ import User from "../models/user.model.js";
 
 export const RegisterUser = async (req, res) => {
   try {
+    console.log(0);
+    
     const { fullName, email, password, phone, gender, dob } = req.body;
     if (!fullName || !email || !password || !phone || !gender || !dob) {
       res.status(400).json({ message: "All Feilds Required" });
