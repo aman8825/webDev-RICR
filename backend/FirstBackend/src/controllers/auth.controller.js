@@ -27,8 +27,7 @@ export const RegisterUser = async (req, res,next) => {
     const photo = {
       url: photoUrl,
       publicId: null,
-    };
-    //create new user
+    };8 //create new user
     const newUser = await User.create({
       fullName,
       email,
@@ -44,9 +43,36 @@ export const RegisterUser = async (req, res,next) => {
   }
 };
 
-export const loginUser = (req, res) => {
-  res.json({ message: "Login Successfull From Controller" });
+export const loginUser =async (req, res,next) => {
+  try {
+    const {email,password}=req.body;
+    if(!email || !password){
+       const error=new Error("All fiels Required")
+    error.statusCode(400)
+      return next(error);
+    }
+     const existingUser = await User.findOne({ email });
+    if (!existingUser) {
+    const error=new Error("Email Not Registred")
+    error.statusCode(404)
+      return next(error);
+    }
+if(password !== existingUser.password){
+   const error=new Error("Invalid Password")
+    error.statusCode(401)
+      return next(error);
+}
+res.status(200).json({message:"Welcome Back",
+  
+  data:existingUser
+})
+    
+  } catch (error) {
+    console.log(error.message);
+    next();
+    
+  }
 };
 export const LogoutUser = (req, res) => {
-  res.json({ message: "Login Successfull From Controller" });
+  res.json({ message: "Logout Successfull From Controller" });
 };
